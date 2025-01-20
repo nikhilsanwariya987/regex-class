@@ -7,8 +7,8 @@ function Nav() {
   return (
     <nav className="bg-white-100 flex justify-between p-2 border-2">
       <div className="flex gap-3">
-        <div className="p-3 text-x hover:rounded-full">
-          <FontAwesomeIcon icon={faBars} />
+        <div className="p-3 text-x hover:rounded-full hover:shadow-xl hover:text-gray-500">
+          <FontAwesomeIcon icon={faBars} className="hover: text-gray-800" />
         </div>
 
         <div className="flex gap-3 items-center">

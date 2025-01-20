@@ -6,17 +6,25 @@ import { IoArchive } from "react-icons/io5";
 import { FaGear } from "react-icons/fa6";
 function SideBar() {
   return (
-    <div className="h-screen w-24 p-4 flex flex-col border-r-2 ">
-      <div className="mb-2">
-        <FaHome/>
-        <div/>
+    <div className="h-screen w-24  flex flex-col border-r-2 ">
+      <div className="p-4 text-2xl">
+        <FaHome />
+      </div>
+     
+      <div className="p-4 text-2xl">
         <FaCalendar />
       </div>
-      <div className="p-3">
+
+      <div className="border  mt-2"></div>
+      <div className="p-4  text-2xl">
         <FaGraduationCap />
+      </div>
+      <div className="border mt-3"></div>
+      <div className="p-4 text-2xl">
         <IoArchive />
       </div>
-      <div className="p-3">
+    
+      <div className="p-4 text-2xl ">
         <FaGear />
       </div>
     </div>

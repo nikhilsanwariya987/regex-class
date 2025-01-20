@@ -11,6 +11,7 @@ function Main() {
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
+      image: "https://www.gstatic.com/classroom/themes/img_read.jpg",
     },
     {
       title: " Cpp SESSION",
@@ -18,6 +19,7 @@ function Main() {
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
+      image: "https://gstatic.com/classroom/themes/img_learnlanguage.jpg",
     },
     {
       title: "REACT NODE BATCH K",
@@ -25,6 +27,7 @@ function Main() {
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
+      image: "https://www.gstatic.com/classroom/themes/img_bookclub.jpg",
     },
     {
       title: "Cpp Sessions+",
@@ -32,49 +35,57 @@ function Main() {
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
+      image: "https://www.gstatic.com/classroom/themes/Honors.jpg",
     },
+    // {
+    //   title: "cpp LOGICAL",
+    //   name: "REGex Software",
+    //   circle: "R",
+    //   icon: "faUser",
+    //   icons: "faFolder",
+    //   image: "https://www.gstatic.com/classroom/themes/img_read.jpg",
+    // },
+    // {
+    //   title: "Big database",
+    //   name: "REGex Software",
+    //   circle: "R",
+    //   icon: "faUser",
+    //   icons: "faFolder",
+    //   image: "https://www.gstatic.com/classroom/themes/img_read.jpg",
+    // },
     {
-      title: "cpp LOGICAL",
+      title: " C LOGICAL ",
       name: "REGex Software",
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
+      image: "https://www.gstatic.com/classroom/themes/SocialStudies.jpg",
     },
     {
-      title: "Big database",
+      title: "Linux / Git",
       name: "REGex Software",
       circle: "R",
       icon: "faUser",
       icons: "faFolder",
-    },
-    {
-      title: "java ",
-      name: "REGex Software",
-      circle: "R",
-      icon: "faUser",
-      icons: "faFolder",
-    },
-    {
-      title: "mongodb",
-      name: "REGex Software",
-      circle: "R",
-      icon: "faUser",
-      icons: "faFolder",
+      image: "https://www.gstatic.com/classroom/themes/Honors.jpg",
     },
   ];
   return (
     <>
-      <div className="  flex justify-center  flex-wrap p-5 hover:shadow-xl transition duration-300">
+      <div className="  flex gap-3  flex-wrap p-5 hover:shadow-xl transition duration-300">
         {pro.map((p, i) => (
-          <div className="border-2 rounded-xl w-72  m-2 hover:shadow-xl hover:cursor-pointer">
-            <div className="w-full bg-red-200 p-2 bg-[url('https://gstatic.com/classroom/themes/img_read.jpg')]  bg-cover bg-center rounded-xl ">
+          <div className="border-2 rounded-xl w-72 m-2 hover:shadow-xl hover:cursor-pointer">
+            <div
+              className="w-full bg-red-200 p-2  bg-cover bg-center rounded-xl "
+              style={{ backgroundImage: `url(${p.image})` }}
+            >
               <h4 className="text-xl text-white font-semibold inline-block hover:border-b-2 hover:border-white">
                 {p.title}
               </h4>
               <h6 className="text-xs relative top-5 text-white font-semibold">
                 {p.name}
               </h6>
-              <div className="relative left-44 size-10 rounded-full bg-green-600 top-6 right-2 p-6 flex justify-center items-center  ">
+              <div className="relative left-52 size-10 rounded-full bg-green-600 top-6  p-7 flex justify-center items-center  ">
                 <h4 className="text-4xl text-center text-white ">{p.circle}</h4>
               </div>
             </div>
